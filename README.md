@@ -63,6 +63,7 @@ ALTER TABLE PRODUTOS ADD CONSTRAINT PK_PRODUTOS PRIMARY KEY (ID);
 
 
 /******************************************************************************/
+
 Delphi 10.2.3 Tokyo (Embarcadero RAD Studio 10.2)
 
 http://altd.embarcadero.com/download/radstudio/10.2/delphicbuilder10_2_3__93231.iso
