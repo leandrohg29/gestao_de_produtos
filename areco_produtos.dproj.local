@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/06/23 14:38:51.000.613,=C:\Users\Leandro\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/23 14:40:22.000.431,C:\ARECO\u_principal.dfm=C:\Users\Leandro\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/06/23 14:40:22.000.431,C:\ARECO\u_principal.pas=C:\Users\Leandro\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/23 14:40:35.000.141,C:\ARECO\areco_produtos.dproj=C:\Users\Leandro\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/06/23 14:59:08.000.638,=C:\ARECO\Unit1.pas</Transaction>
+    <Transaction>2022/06/23 14:59:31.000.508,C:\ARECO\u_dm.dfm=C:\ARECO\Unit1.dfm</Transaction>
+    <Transaction>2022/06/23 14:59:31.000.508,C:\ARECO\u_dm.pas=C:\ARECO\Unit1.pas</Transaction>
+    <Transaction>2022/06/26 10:17:23.000.543,=C:\ARECO\Unit1.pas</Transaction>
+    <Transaction>2022/06/26 10:18:47.000.339,C:\ARECO\Classes\u_produtos.pas=C:\ARECO\Unit1.pas</Transaction>
+    <Transaction>2022/06/28 10:53:27.000.671,=C:\ARECO\Unit1.pas</Transaction>
+    <Transaction>2022/06/28 11:32:25.000.591,C:\ARECO\u_inicial.pas=C:\ARECO\Unit1.pas</Transaction>
+    <Transaction>2022/06/28 11:32:25.000.591,C:\ARECO\u_inicial.dfm=C:\ARECO\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

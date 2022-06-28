@@ -1,0 +1,139 @@
+unit u_produtos;
+
+interface
+
+uses
+  Windows, SysUtils, Classes, Controls, Forms, ComCtrls, dialogs, u_dm;
+
+ type
+
+ TProduto = class
+
+ private
+  FNome: string;
+  FMarca: string;
+  FQuantidade: integer;
+  FValor : string;
+
+ public
+    constructor Create();
+    destructor Destroy; override;
+
+    function InserirProduto(id: integer)   : Boolean;
+    function AlterarProduto(id: integer)   : Boolean;
+    function ExcluirProduto(id: integer)   : Boolean;
+   // function CancelarProduto(id: integer)  : Boolean;
+
+ end;
+
+
+implementation
+
+constructor TProduto.Create();
+begin
+
+end;
+
+destructor Tproduto.Destroy;
+begin
+ inherited;
+end;
+
+function TProduto.AlterarProduto(id: integer): Boolean;
+begin
+
+  DM.QRY_PRODUTOS.Close;
+  DM.QRY_PRODUTOS.SQL.Clear;
+  DM.QRY_PRODUTOS.SQL.Add(' update Produto ');
+  DM.QRY_PRODUTOS.SQL.Add(' set peso=:peso, ');
+  DM.QRY_PRODUTOS.SQL.Add(' altura =:altura ');
+  DM.QRY_PRODUTOS.SQL.Add(' where (id=:id)');
+  DM.QRY_PRODUTOS.Params.ParamByName('id').Value      := id;
+
+
+  try
+    DM.QRY_PRODUTOS.ExecSQL;
+    Result := True;
+  except
+    Result := False;
+  end;
+end;
+
+
+
+function TProduto.ExcluirProduto(id: integer): Boolean;
+begin
+  DM.QRY_PRODUTOS.Close;
+  DM.QRY_PRODUTOS.SQL.Clear;
+  DM.QRY_PRODUTOS.SQL.Add('delete from produto where id =:id');
+  DM.QRY_PRODUTOS.Params.ParamByName('id').Value     := id;
+  try
+    DM.QRY_PRODUTOS.ExecSQL;
+    Result := True;
+  except
+    Result := False;
+  end;
+end;
+
+
+function TProduto.InserirProduto;
+var
+   codigo : integer;
+begin
+
+  DM.QRY_PRODUTOS.Close;
+  DM.QRY_PRODUTOS.SQL.Clear;
+  DM.QRY_PRODUTOS.Append;
+  DM.QRY_PRODUTOS.SQL.Add('Select Max(id) from produtos ');
+
+  try
+    DM.QRY_PRODUTOS.ExecSQL;
+    codigo := DM.QRY_PRODUTOSID.Value + 1;
+    DM.QRY_PRODUTOS.Open();
+    Result := True;
+  except
+    Result := False;
+  end;
+end;
+
+ {
+function TProduto.ValidaAlteraProduto(id: integer; altura,
+  peso: double): Boolean;
+begin
+  if (id >=0) and (altura >= 0.0) and (peso >= 0.0) then
+   result := true
+  else
+   begin
+     ShowMessage('Os campos não podem estar vazios.');
+     result:= false;
+     exit;
+   end;
+end;
+
+function TProduto.ValidaExcluirProduto(id: integer): Boolean;
+begin
+  if (id >=0) then
+   result := true
+  else
+   begin
+     ShowMessage('O campo não podem estar vazios.');
+     result:= false;
+     exit;
+   end;
+end;
+
+function TProduto.ValidaInseriProduto(id: integer; altura,
+  peso: double): Boolean;
+begin
+  if (id >=0) and (altura >= 0.0) and (peso >= 0.0) then
+   result := true
+  else
+   begin
+     ShowMessage('Os campos não podem estar vazios.');
+     result:= false;
+     exit;
+   end;
+end;   }
+
+end.
+
