@@ -6,10 +6,13 @@ Programas usados para este projeto:
 
 Criação do BD e tabelas:
 
+/******************************************************************************/
 -> IBEXPERT - Versão 2015.12.21.1
 BD: FIREBIRD 2.5
 Login: SYSDBA
 Senha: masterkey
+
+/******************************************************************************/
 
 Script da Tabela PRODUTOS
 
@@ -57,12 +60,15 @@ ALTER TABLE PRODUTOS ADD CONSTRAINT PK_PRODUTOS PRIMARY KEY (ID);
 
 -> Versão do Delphi:
 
+
+/******************************************************************************/
 Delphi 10.2.3 Tokyo (Embarcadero RAD Studio 10.2)
 
 http://altd.embarcadero.com/download/radstudio/10.2/delphicbuilder10_2_3__93231.iso
 MD5: 40d693b9989f7ccdf07c07ea676d1ab2
 RAD Studio 10.2 Version: 25.0.31059.3231  InterBase 2017 Version: 13.2.0.315
 
+/******************************************************************************/
 
 -> Versão do Report Builder:
 
@@ -72,6 +78,7 @@ https://www.digital-metaphors.com/download-trial
 Server 21.04 for Delphi 10.2 Tokyo (Update 3)
 https://www.digital-metaphors.com/download/demo/server/rbServ25d.exe
 
+/******************************************************************************/
 
 -> Versão do Firebird
 
@@ -79,6 +86,7 @@ Firebird 2.5 Win32 v.2.5.1.26351
 https://sourceforge.net/projects/firebird/files/firebird-win32/2.5.1-Release/Firebird-2.5.1.26351_1_Win32.exe/download
 
 
+/******************************************************************************/
 
 
 
