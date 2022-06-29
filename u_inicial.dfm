@@ -393,7 +393,7 @@ object finicial: Tfinicial
     Height = 13
     Caption = 
       'D'#250'vidas? Entre em contato com nosso suporte. Tel :+55 19 3849-43' +
-      '55   /   WhatApp : 19 98376-0211 '
+      '55   /   WhatsApp : 19 98376-0211 '
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
